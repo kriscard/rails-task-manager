@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <div class="taskblock">
+      <h1>My Task</h1>
+      <div class="form-group">
+        <input type="checkbox" class="filled-in" id="checkbox101">
+        <label for="checkbox101">
+          <% @tasks.each do |task| %>
+          <p><%= task.title %> </p>
+          <% end %>
+        </label>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </body>
+</html>
