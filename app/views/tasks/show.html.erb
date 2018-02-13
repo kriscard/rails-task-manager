@@ -1,0 +1,9 @@
+
+<div class="contentall">
+  <%= link_to "Edit the task", edit_task_path(@task.id)%>
+  <h1><%= @task.title %></h1>
+  <div class="contentdetails">
+  <p class="details"><%= @task.details%></p>
+</div>
+<p><%= link_to 'Back to list', '/tasks'%></p>
+</div>
